@@ -1,0 +1,52 @@
+using System;
+namespace TreehouseDefense
+{
+    class Tower
+    {
+        private readonly MapLocation _location;
+        private const int _range = 1;
+        private const int _power = 1;
+        private const double _accuracy = 0.75;
+        private static readonly Random _random = new Random();
+        public Tower(MapLocation location, Path path, Map map)
+        {
+            _location = location;
+            
+            /*validation for whether the tower is on the Map.
+            Uses the OnMap method which valides a point
+            The location variable is a MapLocation which is a sub-class 
+            of the point class which makes this work*/
+            if (!map.OnMap(this._location))
+            {
+                throw new OutOfBoundsException("Tower is outside of the map.");
+            }
+            //validation for if the tower is on the path - needs work
+            //syntax foreach(Class variable in Array)
+            /*foreach(Path MapLocation in _path;
+            if (MapLocation location == this._location)
+            {
+                throw new OutOfBoundsException("Tower is on the path.");
+            }*/
+        }
+        public bool IsSucessfulShot()
+        {
+            return _random.NextDouble() < _accuracy;
+        }
+        public void FireOnInvaders(Invader[] invaders)
+        {
+            foreach(Invader invader in invaders)
+            {
+                //Check if the tower's distance for each invader is less than the shooting range
+                if(invader.IsActive && _location.InRangeOf(invader.Location, _range))
+                {
+                    if(IsSucessfulShot())
+                    {
+                    invader.DecreaseHealth(_power);
+                    }
+                    break;
+                }
+            }
+        }
+    }
+}
+
