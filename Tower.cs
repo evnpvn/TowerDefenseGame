@@ -8,7 +8,7 @@ namespace TreehouseDefense
         private const int _power = 1;
         private const double _accuracy = 0.75;
         private static readonly Random _random = new Random();
-        public Tower(MapLocation location, Path path, Map map)
+        public Tower(MapLocation location, Map map)
         {
             _location = location;
             
@@ -20,13 +20,7 @@ namespace TreehouseDefense
             {
                 throw new OutOfBoundsException("Tower is outside of the map.");
             }
-            //validation for if the tower is on the path - needs work
-            //syntax foreach(Class variable in Array)
-            /*foreach(Path MapLocation in _path;
-            if (MapLocation location == this._location)
-            {
-                throw new OutOfBoundsException("Tower is on the path.");
-            }*/
+
         }
         public bool IsSucessfulShot()
         {
@@ -41,7 +35,11 @@ namespace TreehouseDefense
                 {
                     if(IsSucessfulShot())
                     {
-                    invader.DecreaseHealth(_power);
+                        invader.DecreaseHealth(_power);
+                        if(invader.IsNeutralized)
+                        {
+                            Console.WriteLine("Killed an invader!");
+                        }
                     }
                     break;
                 }
