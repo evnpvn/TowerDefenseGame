@@ -24,16 +24,16 @@ namespace TreehouseDefense
                 Invader[] invaders =
                 {
                     new ShieldedInvader(path),
-                    new Invader(path),
-                    new Invader(path),
+                    new StrongInvader(path),
+                    new FastInvader(path),
                     new Invader(path)
 
                 };
                 Tower[] towers =
                 {
                     new Tower (new MapLocation(1, 3, map), map),
-                    new Tower (new MapLocation(3, 3, map), map),
-                    new Tower (new MapLocation(5, 3, map), map)
+                    new SniperTower (new MapLocation(3, 4, map), map),
+                    new PowerTower (new MapLocation(5, 3, map), map)
                 };
 
                 Level level = new Level(invaders)
@@ -42,7 +42,7 @@ namespace TreehouseDefense
                 };
 
                 bool playwerWon = level.Play();
-                Console.WriteLine("Player " + (playwerWon ? "won" : "lost"));
+                Console.WriteLine("You " + (playwerWon ? "Won!" : "lost..."));
 
 
             }
