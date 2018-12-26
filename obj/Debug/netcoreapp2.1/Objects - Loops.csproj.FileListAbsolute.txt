@@ -9,3 +9,14 @@ C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#
 C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects - Loops\obj\Debug\netcoreapp2.1\Objects - Loops.AssemblyInfo.cs
 C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects - Loops\obj\Debug\netcoreapp2.1\Objects - Loops.dll
 C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects - Loops\obj\Debug\netcoreapp2.1\Objects - Loops.pdb
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\bin\Debug\netcoreapp2.1\Objects - Loops.deps.json
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\bin\Debug\netcoreapp2.1\Objects - Loops.runtimeconfig.json
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\bin\Debug\netcoreapp2.1\Objects - Loops.runtimeconfig.dev.json
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\bin\Debug\netcoreapp2.1\Objects - Loops.dll
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\bin\Debug\netcoreapp2.1\Objects - Loops.pdb
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.csprojAssemblyReference.cache
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.csproj.CoreCompileInputs.cache
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.AssemblyInfoInputs.cache
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.AssemblyInfo.cs
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.dll
+C:\Users\EvanPavan\Documents\Documents\2 - Personal\Programming\1 - Treehouse\C#\Invader game\Objects Loops\obj\Debug\netcoreapp2.1\Objects - Loops.pdb

@@ -12,5 +12,19 @@ namespace TreehouseDefense
         {
             return (pathstep < _path.Length) ? _path[pathstep] : null;
         }
+
+        //add method to validate if the MapLocation is on the Path
+        public bool IsOnPath(MapLocation location)
+        {
+            foreach(var pathLocation in _path)
+            {
+                if (pathLocation.Equals(location))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }

@@ -40,7 +40,7 @@ namespace TreehouseDefense
                         invader.DecreaseHealth(Power);
                         if(invader.IsNeutralized)
                         {
-                            Console.WriteLine("Killed an invader!");
+                            Console.WriteLine("Killed an invader at (" + invader.Location + ")");
                         }
                     }
                     break;

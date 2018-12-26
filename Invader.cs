@@ -25,7 +25,7 @@ namespace TreehouseDefense
         public virtual void DecreaseHealth(int factor)
         {
             Health -= factor;
-            System.Console.WriteLine("Shot at and hit invader. Health decreased by" + factor);
+            System.Console.WriteLine("Shot at and hit invader. Health decreased by " + factor);
         }
     }
 }

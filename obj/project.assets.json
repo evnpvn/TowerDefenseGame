@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects - Loops\\Objects - Loops.csproj",
+      "projectUniqueName": "c:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects Loops\\Objects - Loops.csproj",
       "projectName": "Objects - Loops",
-      "projectPath": "C:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects - Loops\\Objects - Loops.csproj",
+      "projectPath": "c:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects Loops\\Objects - Loops.csproj",
       "packagesPath": "C:\\Users\\EvanPavan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects - Loops\\obj\\",
+      "outputPath": "c:\\Users\\EvanPavan\\Documents\\Documents\\2 - Personal\\Programming\\1 - Treehouse\\C#\\Invader game\\Objects Loops\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
