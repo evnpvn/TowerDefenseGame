@@ -32,11 +32,18 @@ namespace TreehouseDefense
                 _incarnation2.DecreaseHealth(factor);
             }
         }
-
         public void Move()
         {
             _incarnation1.Move();
             _incarnation2.Move();
+        }
+        //this method is not print to console as expected yet
+        public void Resurrect()
+        {
+            if(_incarnation1.IsNeutralized)
+            {
+                System.Console.WriteLine("The invader came back to life, even stronger!");
+            }
         }
     }
 }
