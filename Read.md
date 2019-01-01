@@ -37,15 +37,15 @@ $ dotnet run
 
 Players interact with the game in 2 ways:
 1. Directly in the console
-2. Through the Game's Level files
+2. Through the game's level files
 
 ### The Console
 
 * When the application runs the user will be prompted to select a level.  
 * The game will then be played through from start to finish in 1 turn.
 
-### Game Level files
-To place towers on the map the player will need to update the level files and update the code in the Tower section. Only the tower code needs be updated.
+### Game level files
+To place towers on the game's map the player will need to update the level files and update the code in the Tower section. Only the tower code needs be updated.
 
 * Before running the application in the terminal open the `Level1.cs` file.   
 * Find the Tower code commented as `//Select your Towers`
@@ -53,7 +53,7 @@ To place towers on the map the player will need to update the level files and up
 
 | Tower Name  | Description |
 | ----------  | ----------- |
-|   Tower     | 2x Damage   |
+|   Tower     | Default     |
 | PowerTower  | 2x Damage   |
 | SniperTower | 2x Hit Range|
 
