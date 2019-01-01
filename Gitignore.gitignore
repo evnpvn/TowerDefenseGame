@@ -28,6 +28,8 @@ x64/
 [Bb]in/
 *bin/
 */bin*
+*obj/
+*/obj*
 [Oo]bj/
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
