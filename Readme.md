@@ -37,25 +37,46 @@ $ dotnet run
 
 Players interact with the game in 2 ways:
 1. Directly in the console
-2. Through the game's level files
+2. Through the game's Playlevel files
 
-### The Console
+#### The Console
 
-* When the application runs the user will be prompted to select a level.  
-* The game will then be played through from start to finish in 1 turn.
+* When the application runs the user will be introduced to the game and prompted to select a level
+* Once selected he game will then be played through from start to finish without any further interaction
 
-### Game level files
-To place towers on the game's map the player will need to update the level files and update the code in the Tower section. Only the tower code needs be updated.
+#### Playlevel files
+To place towers on the game's map the player will need to update the coordinate values of each tower. Only the tower code in the PlayLevel files needs be updated.
 
 * Before running the application in the terminal open the `PlayLevelOne.cs` file.   
-* Find the code commented as `//How to Play//`
-* The following towers can be placed by entering their coordinates on the map.
+* Find the code commented as `//Place your towers//`
 
-| Tower Name  | Description |
-| ----------  | ----------- |
-|   Tower     | Default     |
-| PowerTower  | 2x Damage   |
-| SniperTower | 2x Hit Range|
+## Invaders
+The following invaders will move down the path. If an invader gets to the end of the path you lose. But if all invaders are killed you win.
+
+* When the game starts all Invaders will begin at the same time at the start of the path 
+* All
+
+| Invader Name         | Description                                                 |
+| -------------------  | ----------------------------------------------------------  |
+| Basic Inavder        | 2 health points, moves 1 square/turn                        |
+| Fast Invader         | Moves 2 squares/turn                                        |
+| Shielded Invader     | 50% change no damage per attack                             |
+| Strong Invader       | 4 health points                                             |
+| Ressurecting Invader | A basic invader that when killed returns as a strong invader|
+
+## Towers
+The following towers can be placed by entering their coordinates on the PlayLevel files. 
+
+* All towers will have a chance to shoot once per turn  
+* All towers have a 75% chance to hitting their target if it is in range.
+
+
+| Tower Name   | Description                        |
+| ----------   | ---------------------------------- |
+|  Basic Tower | 1 damage, 1 square hit range       |
+| Power Tower  | 2x damage                          |
+| Sniper Tower | 2x hit range (available in level 2)|
+  
 
 
 ## Version

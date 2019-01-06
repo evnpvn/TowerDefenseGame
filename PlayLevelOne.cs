@@ -2,7 +2,7 @@ namespace TreehouseDefense
 {
     static class PlayersTowers1
     {
-        //How to Play//
+        //Place your towers//
         //Update the coordinates of the towers below to place them on the map//
 
         //Level 1 Map for reference// 
