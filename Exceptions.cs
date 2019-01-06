@@ -7,11 +7,20 @@ namespace TreehouseDefense
         public TreehouesDefenseException(string message) : base(message)
         { }
     }
-        class OutOfBoundsException : TreehouesDefenseException
+
+    class OutOfBoundsException : TreehouesDefenseException
     {
         public OutOfBoundsException()
         { }
         public OutOfBoundsException(string message) : base(message)
+        { }
+    }
+
+    class InvalidEntry : TreehouesDefenseException
+    {
+        public InvalidEntry()
+        { }
+        public InvalidEntry(string message) : base(message)
         { }
     }
 }

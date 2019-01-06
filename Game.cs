@@ -6,120 +6,151 @@ namespace TreehouseDefense
         public static void Main(string[] args)
         {  
             //Game introduction
-            /* Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Welcome to Treehouse Defense!");
             Console.WriteLine("-----------------------------");
             Console.WriteLine("");
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(2000);
             
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("Please review the Readme file for how to Play");
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            System.Threading.Thread.Sleep(3500);
+            System.Threading.Thread.Sleep(5000);
             Console.WriteLine("You should have read the Readme because now it's going to be confusing");
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(4000);
             Console.WriteLine("Everything is going to happen all at once after you select a level");
-            System.Threading.Thread.Sleep(3000);
-            Console.WriteLine("Then you will be all like, \'Man what a terrible game\'");
-            System.Threading.Thread.Sleep(3000);
-            Console.WriteLine("But is actually not terrible");
-            System.Threading.Thread.Sleep(1000);
-            Console.WriteLine("It's you that is terrible and you should feel terrible");
-            System.Threading.Thread.Sleep(5500);
+            System.Threading.Thread.Sleep(5000);
             Console.WriteLine("");
             Console.WriteLine("Ok fine");
             Console.WriteLine("");
-            System.Threading.Thread.Sleep(500);
-            */
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("");
+
+            Console.ForegroundColor = ConsoleColor.Gray; 
+            Console.WriteLine("Level 1:");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  _   _   _   _   _   _   _   _");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
+            Console.WriteLine("| P | A | T | H | X | X | X | X |");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enemy Invaders:");
+            Console.WriteLine("    2 x Basic Invader");
+            Console.WriteLine("    1 x Sheilded Invader");
+            Console.WriteLine("    1 x Fast Invader");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("Your Towers:");
+            Console.WriteLine("    3 x Basic Tower");
+            Console.WriteLine("    1 x Power Tower");
+            Console.WriteLine("");
+            System.Threading.Thread.Sleep(2000);
+
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Select a Level by entering \'1\' or \'2\'");
+            Console.WriteLine("Level 2:");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  _   _   _   _   _   _   _   _");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
+            Console.WriteLine("| P | A | T | H | _ | _ | _ | _ |");
+            Console.WriteLine("| _ | _ | _ | X | _ | X | X | X |");
+            Console.WriteLine("| _ | _ | _ | X | X | X | _ | _ |");
+            Console.WriteLine("| _ | _ | _ | _ | _ | _ | _ | _ |");
 
-            string userEntry = Console.ReadLine();
-
-            int userLevel = Int32.Parse(userEntry);
-
-            //need to parse readline to int
-            //need to determine if I should create a new instance of the 'Level' object from the Console.ReadLine method
-            //Then from that I could create a Level in the level file with it.
-            //I think I'm overthinking this since it's just a variable and should have never been a class
-
-            /*
-            Creating some if statements here.
-            These should stay here. The level files will contain the details for building that level.
-            The level object itself will get created here depending on what level was entered.
-            In reality as well what I should do is have a separate InvadersLevel1 file that the user can override the locations of but that's it.
-            That would be a decent test of understanding extensibility.
-            if (level == 1)
-            {
-
-            }
-            else if()
-            */
-
-
-
-            Map map = new Map(8,5);
-            try
-            {
-                Path path = new Path(
-                        new [] 
-                        {
-                        new MapLocation(0, 2, map),
-                        new MapLocation(1, 2, map),
-                        new MapLocation(2, 2, map),
-                        new MapLocation(3, 2, map),
-                        new MapLocation(4, 2, map),
-                        new MapLocation(5, 2, map),
-                        new MapLocation(6, 2, map),
-                        new MapLocation(7, 2, map),
-                        }
-                    );
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enemy Invaders:");
+            Console.WriteLine("    2 x Basic Invader");
+            Console.WriteLine("    2 x Sheilded Invader");
+            Console.WriteLine("    1 x Fast Invader");
+            Console.WriteLine("    1 x Strong Invader");
+            Console.WriteLine("    2 x Resurrecting Invader");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("Your Towers:");
+            Console.WriteLine("    2 x Basic Tower");
+            Console.WriteLine("    2 x Power Tower");
+            Console.WriteLine("    2 x Sniper Tower");
+            Console.WriteLine("");
             
-                IInvader[] invaders =
+            Console.ForegroundColor = ConsoleColor.Gray;
+            
+            for(int i = 0; i < 5; i++)
+            {
+                try
+                {    
+                    if(i == 4)
+                    {
+                        throw new InvalidEntry();
+                    }
+            
+                    Console.WriteLine("Select a Level by entering \'1\' or \'2\'");
+                    string userEntry = Console.ReadLine();
+
+                    try
+                    {
+                        int userLevel = Int32.Parse(userEntry);
+
+                        if(userLevel > 2 || userLevel < 1)
+                        {
+                            throw new InvalidEntry();
+                        } 
+
+                        if (userLevel == 1)
+                        {
+                            //create new lvl1 object and start that level up
+                            LevelOne lvl1 = new LevelOne();
+                        }
+                        
+
+                        else if(userLevel == 2)
+                        {
+                            LevelTwo lvl1 = new LevelTwo();
+                        }
+                        break;
+                    }
+
+                    catch(InvalidEntry)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        System.Console.WriteLine("Not a valid level");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.WriteLine("");
+                        continue;
+                    }
+
+                    catch(System.FormatException)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("That's not even a number");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.WriteLine("");
+                        continue;
+                    }
+
+                    catch(TreehouesDefenseException)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Unhandled TreehouseDefenseException");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }
+
+                    catch(Exception ex)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Unhandled Exception: " + ex);
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }        
+                }
+                catch(InvalidEntry)
                 {
-                    new ShieldedInvader(path),
-                    new ResurrectingInvader(path),
-                    //new StrongInvader(path),
-                    new FastInvader(path),
-                    new BasicInvader(path)
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("None of those were valid entries you dummy...");
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     
-                };
-                Tower[] towers =
-                {
-                    new Tower (new MapLocation(1, 3, map), map),
-                    new SniperTower (new MapLocation(3, 4, map), map),
-                    new PowerTower (new MapLocation(5, 3, map), map),
-                    new PowerTower (new MapLocation(6, 3, map), map),
-                    new Tower (new MapLocation(3, 1, map), map)
-                };
-
-                Level level = new Level(invaders)
-                {
-                    towers = towers
-                };
-
-                bool playwerWon = level.Play();
-                Console.WriteLine("You " + (playwerWon ? "Won!" : "lost..."));
-
-
-            }
-            catch(OutOfBoundsException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            catch(TreehouesDefenseException)
-            {
-                Console.WriteLine("Unhandled TreehouseDefenseException");
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Unhandled Exception: " + ex);
-            }
-        
-            //Console.ResetColor();
-
+                }
+            }    
         }
 
     }  

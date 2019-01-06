@@ -47,9 +47,9 @@ Players interact with the game in 2 ways:
 ### Game level files
 To place towers on the game's map the player will need to update the level files and update the code in the Tower section. Only the tower code needs be updated.
 
-* Before running the application in the terminal open the `Level1.cs` file.   
-* Find the Tower code commented as `//Select your Towers`
-* The following towers can be placed by entering the tower name and coordinates on the map.
+* Before running the application in the terminal open the `PlayLevelOne.cs` file.   
+* Find the code commented as `//How to Play//`
+* The following towers can be placed by entering their coordinates on the map.
 
 | Tower Name  | Description |
 | ----------  | ----------- |
