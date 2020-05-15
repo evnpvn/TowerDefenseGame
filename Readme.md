@@ -1,13 +1,13 @@
-# Treehouse Defense
+# Tower Defense Game
 
-Treehouse Defense is a tower defense game in the form of a console application.  
-It was built using teamtreehouse.com lessons to help learn the C# programming language.
+This game is a simple version of the standard tower defense game built in the form of a console application.  
+It was built to help learn the C# programming language.
 
 ## Getting Started
 
 ### Prerequisites
 
-Treehouse Defense requires Microsoft's .NET Core SDK installed in order to build and run the application. 
+Tower Defense requires Microsoft's .NET Core SDK installed in order to build and run the application. 
 
 https://dotnet.microsoft.com/download
 
@@ -73,7 +73,7 @@ The following towers can be placed by entering their coordinates on the PlayLeve
 
 | Tower Name   | Description                        |
 | ----------   | ---------------------------------- |
-|  Basic Tower | 1 damage, 1 square hit range       |
+| Basic Tower  | 1 damage, 1 square hit range       |
 | Power Tower  | 2x damage                          |
 | Sniper Tower | 2x hit range (available in level 2)|
   
